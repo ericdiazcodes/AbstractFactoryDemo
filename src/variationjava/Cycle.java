@@ -1,8 +1,12 @@
 package variationjava;
 
-public interface Cycle {
-    Color color();
+abstract class Cycle {
+    abstract int wheelCount();
 
-    void ride();
+    abstract Color color();
+
+    void ride() {
+        System.out.println("Ridding my " + this.toString() + " on " + wheelCount() + " wheels");
+    }
 }
 

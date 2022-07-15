@@ -1,8 +1,8 @@
 package variationjava;
 
-abstract class Tricycle implements Cycle {
+abstract class Tricycle extends Cycle {
     @Override
-    public void ride() {
-        System.out.println("Ridding my " + this.toString());
+    int wheelCount() {
+        return 3;
     }
 }
