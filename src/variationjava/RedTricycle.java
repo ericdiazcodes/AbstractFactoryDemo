@@ -1,13 +1,8 @@
 package variationjava;
 
-public class RedTricycle implements Tricycle {
+public class RedTricycle extends Tricycle {
     @Override
     public Color color() {
         return Color.RED;
-    }
-
-    @Override
-    public void ride() {
-        System.out.println("Ridding my " + this.toString());
     }
 }
